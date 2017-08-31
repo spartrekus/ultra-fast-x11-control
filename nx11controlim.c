@@ -53,6 +53,18 @@ int main()
         else if ( ch == 13 ) 
            nruncmd( " xdotool key Return " ); 
 
+        else if ( ch == '<' ) 
+           nruncmd( " xdotool key less " ); 
+        else if ( ch == '>' ) 
+           nruncmd( " xdotool key greater " ); 
+        else if ( ch == '#' ) 
+           nruncmd( " xdotool key numbersign " ); 
+        else if ( ch == '|' ) 
+           nruncmd( " xdotool key bar " ); 
+        //else if ( ch == '@' ) 
+        else if ( ch == 64 ) 
+           nruncmd( " xdotool key at " ); 
+
         else if ( 
            (( ch >= 'a' ) && ( ch <= 'z' ))
         || (( ch >= '1' ) && ( ch <= '9' ))
